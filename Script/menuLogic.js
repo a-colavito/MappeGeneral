@@ -59,8 +59,6 @@ export const setupMenuLogic = () => {
         toggleLeftMenu();
     });
 
-    // Riattiva il mapMenu se necessario, ad esempio con un evento sulla mappa
-    map.on('click', () => {
-        showMapMenu();
-    });
+
+
 };
