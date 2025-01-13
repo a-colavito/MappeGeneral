@@ -28,7 +28,7 @@
     border-radius: 8px;
     z-index: 1000;
     width: 250px;
-    max-height: 400px; /* Limitiamo le dimensioni */
+    max-height: 80vh;
     overflow-y: auto; /* Scorrimento se necessario */
     border: 1px solid #3b8794;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -236,7 +236,7 @@
     }
 
     #map-menu {
-        max-height:80vh;
+        max-height:70vh;
         width: 25vh;
         overflow-x: hidden;
     }
