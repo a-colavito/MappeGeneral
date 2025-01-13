@@ -250,12 +250,12 @@
 
 @media (max-width: 320px) {
     #map {
-        height: 80vh;
+        height: 70vh;
         width: 100%;
     }
 
     #map-menu {
-        max-height: 80vh;
+        max-height: 70vh;
         width: 25vh;
         overflow-x: hidden;
     }
