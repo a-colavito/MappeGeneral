@@ -247,11 +247,11 @@ body {
         box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
         z-index: 1000;
         overflow: hidden; /* Nasconde il contenuto fino all'espansione */
-        transition: height 0.3s ease; /* Effetto animazione */
+        transition: height 0.3s ease; /* Animazione fluida */
     }
 
     #map-menu.expanded {
-        height: 70vh; /* Altezza massima quando è espanso */
+        height: 70vh; /* Altezza quando è espanso */
     }
 
     #map-menu .menu-header {
@@ -263,14 +263,19 @@ body {
         font-weight: bold;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        cursor: grab; /* Indica che è possibile trascinare */
-        user-select: none; /* Evita la selezione di testo durante il trascinamento */
+        cursor: pointer; /* Indica che è cliccabile */
     }
 
     #map-menu .menu-content {
         padding: 10px;
         font-size: 14px;
         overflow-y: auto; /* Scorrimento verticale */
+        display: none; /* Nasconde il contenuto fino all'espansione */
     }
+
+    #map-menu.expanded .menu-content {
+        display: block; /* Mostra il contenuto quando espanso */
+    }
+
 
 }
