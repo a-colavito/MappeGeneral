@@ -24,14 +24,14 @@
     position: absolute;
     top: 20px;
     right: 10px;
-    background-color: #f9fafb;
+    background-color: #ffffff;
     border-radius: 8px;
     z-index: 1000;
     width: 250px;
     max-height: 400px; /* Limitiamo le dimensioni */
     overflow-y: auto; /* Scorrimento se necessario */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 1px solid #3b8794;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 #map-menu .menu-content {
     background-color: #ffffff;  /* Grigio chiaro */
@@ -47,6 +47,7 @@
 }
 
 .menu-header {
+    height: 5vh;
     background-color: #3b8794;  /* Colore istituzionale */
     color: #ffffff;
     padding: 10px;
@@ -80,7 +81,7 @@
 .close-button {
     background: none;
     border: none;
-    color: white;
+    color: #ffffff;
     font-size: 20px;
     cursor: pointer;
     font-weight: bold;
@@ -93,35 +94,34 @@
 
 /* Left Menu */
 #left-menu {
+    align-items: center;
+    justify-content: space-between;
     position: absolute;
     top: 20px;
     left: 10px;
-    background-color: #f9fafb;
+    background-color: #ffffff;
     border-radius: 8px;
     z-index: 1000;
     width: 190px;
     max-height: 400px;
     overflow-y: auto;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 1px solid #3b8794;
-
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Aggiunta di una leggera ombra */
 }
 
-#left-menu-header{
+#left-menu-header {
     background-color: #3b8794;
-    color: #f9fafb;
+    color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;  /* Ridotto il padding */
-    height: 40px;  /* Impostato un'altezza fissa per il contenitore */
-    font-size: 14px;
+    padding: 5px;
+    height: 5vh;
+    font-size: 16px;
+    border-bottom: none; /* Rimosso il bordo inferiore che potrebbe causare sbavature */
+}
 
-}
-#left-menu-header h1 {
-    font-size: 14px;  /* Ridotto il font per il testo */
-    margin: 0;
-}
+
 
 
 
@@ -136,25 +136,25 @@
 }
 
 #resource-list button {
-    background-color: #f9fafb;
+    background-color: #ffffff;
     color: #3b8794;
-    border: 1px solid #3b8794;
     border-radius: 5px;
     padding: 5px 10px;
     width: 100%;
     font-size: 14px;
-    text-align: left;
+    text-align: center;
     cursor: pointer;
     display: none;
 }
 
 #resource-list button:hover {
     background-color: #285f6b;
+    transform: translateY(-2px);
 }
 /* Bottoni delle sedi */
 #location-buttons a {
     display: block; /* Rende ogni link un elemento a blocco */
-    background-color: #f9fafb; /* Colore di sfondo simile al bottone */
+    background-color: #ffffff;  /* Colore di sfondo simile al bottone */
     color: #3b8794; /* Colore del testo */
     border: none; /* Rimuove il bordo di default */
     padding: 8px ; /* Padding per dare spazio attorno al testo */
