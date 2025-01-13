@@ -40,5 +40,11 @@ export const iconConfig = {
         iconSize: [32, 32],
         iconAnchor: [16, 32],
         popupAnchor: [0, -32],
+    }),
+    atm: L.icon({
+        iconUrl: 'Icone/atm-icon.png',
+        iconSize: [32, 32],
+        iconAnchor: [16, 32],
+        popupAnchor: [0, -32],
     })
 };

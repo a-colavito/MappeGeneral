@@ -1,7 +1,6 @@
-// Configurazione della mappa
 export const mapConfig = {
     minZoom: 6,
-    maxZoom: 18,
+    maxZoom: 20, // Incrementa il massimo livello di zoom
 };
 
 export const initialZoom = 8;
