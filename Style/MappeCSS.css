@@ -226,3 +226,32 @@ body {
 }
 
 
+@media (max-width: 768px) {
+    #map {
+        height: 45vh;
+    }
+
+    #map-menu {
+        max-height: 35vh;
+        width: 25vh;
+    }
+
+    #left-menu {
+        width: 140px;
+    }
+}
+
+@media (max-width: 320px) {
+    #map {
+        height: 45vh;
+    }
+
+    #map-menu {
+        max-height: 35vh;
+        width: 25vh;
+    }
+
+    #left-menu {
+        width: 120px;
+    }
+}
