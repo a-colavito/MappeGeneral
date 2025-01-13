@@ -236,7 +236,7 @@
     }
 
     #map-menu {
-        max-height:50vh;
+        max-height:80vh;
         width: 25vh;
         overflow-x: hidden;
     }
@@ -255,7 +255,7 @@
     }
 
     #map-menu {
-        max-height: 50vh;
+        max-height: 80vh;
         width: 25vh;
         overflow-x: hidden;
     }
