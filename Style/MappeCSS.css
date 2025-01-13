@@ -242,29 +242,29 @@ body {
     /* Mappa */
     #map {
         width: 100%;
-        height: 100vh; /* La mappa occupa l'intero viewport */
+        height: 100vh;
         position: relative;
     }
 
     /* Menu (Infobox) */
     #map-menu {
         position: fixed;
-        bottom: 0; /* Posizionato in basso allo schermo */
+        bottom: 0;
         left: 0;
-        width: 100%; /* Occupa tutta la larghezza dello schermo */
-        height: 50px; /* Altezza iniziale (solo header visibile) */
+        width: 100%;
+        height: 50px; /* Altezza iniziale */
         background-color: #ffffff;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
         z-index: 1000;
-        overflow: hidden; /* Nasconde il contenuto inizialmente */
-        transition: height 0.3s ease; /* Animazione fluida per l'espansione */
+        overflow: hidden;
+        transition: height 0.3s ease;
     }
 
-    /* Quando il menu è espanso */
+    /* Menu espanso */
     #map-menu.expanded {
-        height: 50vh; /* Si espande fino a metà schermo */
+        height: 50vh; /* Espande a metà schermo */
     }
 
     /* Header del menu */
@@ -277,18 +277,19 @@ body {
         font-weight: bold;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        cursor: pointer; /* Mostra che è cliccabile */
+        cursor: pointer;
     }
 
     /* Contenuto del menu */
     #map-menu .menu-content {
         padding: 10px;
         font-size: 14px;
-        overflow-y: auto; /* Aggiunge lo scorrimento verticale */
-        display: none; /* Nasconde il contenuto inizialmente */
+        height: calc(50vh - 50px); /* Altezza dinamica del contenuto */
+        overflow-y: auto; /* Scroll verticale */
+        display: none; /* Nascondi inizialmente */
     }
 
-    /* Mostra il contenuto quando espanso */
+    /* Mostra il contenuto quando il menu è espanso */
     #map-menu.expanded .menu-content {
         display: block;
     }
