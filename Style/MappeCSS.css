@@ -100,8 +100,8 @@
     border-radius: 8px;
     z-index: 1000;
     width: 190px;
-    max-height: 400px; /* Limitiamo le dimensioni */
-    overflow-y: auto; /* Scorrimento se necessario */
+    max-height: 400px;
+    overflow-y: auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 1px solid #3b8794;
 
@@ -113,8 +113,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: 5px;  /* Ridotto il padding */
+    height: 40px;  /* Impostato un'altezza fissa per il contenitore */
+    font-size: 14px;
 
+}
+#left-menu-header h1 {
+    font-size: 14px;  /* Ridotto il font per il testo */
+    margin: 0;
 }
 
 
