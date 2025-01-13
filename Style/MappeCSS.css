@@ -6,7 +6,6 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 
-    font-size: 16px
 }
 
 #map-container {
@@ -23,19 +22,16 @@ body {
 
 #map-menu {
     position: absolute;
-    top: 10px;
+    top: 20px;
     right: 10px;
-    background-color: #ffffff;  /* Sfondo bianco del contenitore */
+    background-color: #f9fafb;
+    border-radius: 8px;
     z-index: 1000;
     width: 250px;
-    max-height: 400px;
+    max-height: 400px; /* Limitiamo le dimensioni */
+    overflow-y: auto; /* Scorrimento se necessario */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ddd;  /* Bordi sottili e chiari */
-    display: none;
-    font-size: 14px;
-    overflow-y: auto;  /* Scorrimento solo verticale */
-    transition: all 0.3s ease-in-out;
-    border-radius: 5px;
+    border: 1px solid #3b8794;
 }
 #map-menu .menu-content {
     background-color: #ffffff;  /* Grigio chiaro */
