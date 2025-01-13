@@ -1,7 +1,10 @@
-const mapMenu = document.getElementById('map-menu');
-const menuHeader = mapMenu.querySelector('.menu-header');
 
-// Aggiungi l'evento click sull'header
-menuHeader.addEventListener('click', () => {
-    mapMenu.classList.toggle('expanded'); // Alterna la classe "expanded"
+document.addEventListener("DOMContentLoaded", function () {
+    const mapMenu = document.getElementById("map-menu");
+    const menuHeader = mapMenu.querySelector(".menu-header");
+
+    menuHeader.addEventListener("click", function () {
+        // Aggiunge/rimuove la classe "expanded" per espandere/ridurre il menu
+        mapMenu.classList.toggle("expanded");
+    });
 });

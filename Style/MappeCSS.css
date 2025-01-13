@@ -232,29 +232,42 @@ body {
         font-size: 14px; /* Font più piccolo */
     }
 
-    #map {
-        height: 75vh; /* Mappa più grande */
+    /* Contenitore generale */
+    #map-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
     }
+
+    /* Mappa */
+    #map {
+        width: 100%;
+        height: 100vh; /* La mappa occupa l'intero viewport */
+        position: relative;
+    }
+
+    /* Menu (Infobox) */
     #map-menu {
         position: fixed;
-        bottom: 0;
+        bottom: 0; /* Posizionato in basso allo schermo */
         left: 0;
-        top:300px;
-        width: 100%;
-        height: 60px; /* Altezza iniziale */
+        width: 100%; /* Occupa tutta la larghezza dello schermo */
+        height: 50px; /* Altezza iniziale (solo header visibile) */
         background-color: #ffffff;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
         z-index: 1000;
-        overflow: hidden; /* Nasconde il contenuto fino all'espansione */
-        transition: height 0.3s ease; /* Animazione fluida */
+        overflow: hidden; /* Nasconde il contenuto inizialmente */
+        transition: height 0.3s ease; /* Animazione fluida per l'espansione */
     }
 
+    /* Quando il menu è espanso */
     #map-menu.expanded {
-        height: 70vh; /* Altezza quando è espanso */
+        height: 50vh; /* Si espande fino a metà schermo */
     }
 
+    /* Header del menu */
     #map-menu .menu-header {
         background-color: #3b8794;
         color: #ffffff;
@@ -264,18 +277,20 @@ body {
         font-weight: bold;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        cursor: pointer; /* Indica che è cliccabile */
+        cursor: pointer; /* Mostra che è cliccabile */
     }
 
+    /* Contenuto del menu */
     #map-menu .menu-content {
         padding: 10px;
         font-size: 14px;
-        overflow-y: auto; /* Scorrimento verticale */
-        display: none; /* Nasconde il contenuto fino all'espansione */
+        overflow-y: auto; /* Aggiunge lo scorrimento verticale */
+        display: none; /* Nasconde il contenuto inizialmente */
     }
 
+    /* Mostra il contenuto quando espanso */
     #map-menu.expanded .menu-content {
-        display: block; /* Mostra il contenuto quando espanso */
+        display: block;
     }
 
 
