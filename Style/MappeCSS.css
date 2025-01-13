@@ -226,97 +226,41 @@ body {
 }
 
 /* Per schermi piccoli */
-@media (max-width: 768px) {
-    /* Infobox (Mobile Version) */
-    @media (max-width: 768px) {
-        body {
-            overflow: hidden; /* Rimuove lo scrolling globale */
-        }
-
-        #map {
-            width: 100%;
-            height: calc(70vh); /* La mappa occupa lo spazio sopra l'infobox */
-        }
-        #map-menu .close-button {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 20px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-
-
-        #map-menu {
-            align-items: center;
-            position: fixed;
-            top: 500px;
-            bottom: 100px;
-            width: 45vh;
-            height: 25vh; /* Infobox occupa il 30% dell'altezza */
-            background-color: #ffffff;
-            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2); /* Ombra sopra l'infobox */
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            z-index: 1000;
-            overflow-y: auto; /* Scorrimento verticale per contenuti lunghi */
-            text-align: center;
-
-        }
-
-        #map-menu .menu-header {
-            background-color: #3b8794;
-            color: #ffffff;
-            text-align: center;
-            padding: 10px;
-            font-size: 20px;
-            font-weight: bold;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            align-items: center;
-
-        }
-
-        #map-menu .menu-content {
-            margin:5px;
-            padding: 5px;
-            font-size: 20px;
-            align-items: center;
-            text-align: center;
-
-        }
+/* Generale per schermi piccoli */
+@media (max-width: 375px) {
+    body {
+        font-size: 14px; /* Font più piccolo */
     }
 
+    #map {
+        height: 75vh; /* Mappa più grande */
+    }
+
+    #map-menu {
+        width: 90%;
+        left: 5%;
+        bottom: 10px;
+        top: auto;
+        height: auto;
+        padding: 10px;
+        box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
 
     #left-menu {
-
-        width: 30%; /* Riduce la larghezza per dispositivi mobili */
-        max-height: 50vh; /* Limita l'altezza */
-        font-size: 20px;
-        align-items: center;
-        text-align: center;
-        }
-
-    #left-menu-header {
-        font-size: 16px; /* Riduce il font per il titolo */
-        padding: 5px;
-        align-items: center;
-        text-align: center;
+        width: 85%;
+        left: 7.5%;
+        font-size: 14px;
     }
 
-    #resource-list button,
-    #location-buttons a {
-        font-size: 14px; /* Font più piccolo */
-        padding: 8px; /* Padding per dispositivi mobili */
-        align-items: center;
-        text-align: center;
+    #location-buttons a, #resource-list button {
+        font-size: 12px;
+        padding: 6px;
     }
 
     #google-directions {
-        font-size: 14px; /* Testo più leggibile */
-        padding: 8px 10px;
-        align-items: center;
-        text-align: center;
+        font-size: 12px;
+        padding: 6px 8px;
     }
 }
