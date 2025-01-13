@@ -1,0 +1,245 @@
+
+.hidden {
+    display: none;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#map-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#map {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+#map-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffffff;  /* Sfondo bianco del contenitore */
+    z-index: 1000;
+    width: 250px;
+    max-height: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;  /* Bordi sottili e chiari */
+    display: none;
+    font-size: 14px;
+    overflow-y: auto;  /* Scorrimento solo verticale */
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+#map-menu .menu-content {
+    background-color: #ffffff;  /* Grigio chiaro */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#map-menu.visible {
+    display: block;
+}
+
+.menu-header {
+    background-color: #3b8794;  /* Colore istituzionale */
+    color: #ffffff;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd; /* Separatore più sobrio */
+}
+
+.menu-content {
+    padding: 10px;
+    overflow: hidden;
+}
+
+
+.menu-content h4 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color:#3b8794 ; /* Colore header */
+}
+
+.menu-content p {
+    margin: 0 0 8px;
+    font-size: 13px;
+    color: #333;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.close-button:hover {
+    color: #ff6b6b;
+}
+/* Searchbar */
+#search-bar {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    padding: 5px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #3b8794;
+}
+
+#search-input {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* Left Menu */
+#left-menu {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    z-index: 1000;
+    width: 190px;
+    max-height: 400px; /* Limitiamo le dimensioni */
+    overflow-y: auto; /* Scorrimento se necessario */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #3b8794;
+
+}
+
+#left-menu-header{
+    background-color: #3b8794;
+    color: #f9fafb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+
+
+}
+
+
+
+#resource-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#resource-list li {
+    margin-bottom: 5px;
+}
+
+#resource-list button {
+    background-color: #f9fafb;
+    color: #3b8794;
+    border: 1px solid #3b8794;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 100%;
+    font-size: 14px;
+    text-align: left;
+    cursor: pointer;
+    display: none;
+}
+
+#resource-list button:hover {
+    background-color: #285f6b;
+}
+/* Bottoni delle sedi */
+#location-buttons a {
+    display: block; /* Rende ogni link un elemento a blocco */
+    background-color: #f9fafb; /* Colore di sfondo simile al bottone */
+    color: #3b8794; /* Colore del testo */
+    border: none; /* Rimuove il bordo di default */
+    padding: 8px ; /* Padding per dare spazio attorno al testo */
+    border-radius: 5px; /* Angoli arrotondati */
+    text-align: center; /* Allinea il testo al centro */
+    text-decoration: none; /* Rimuove la sottolineatura */
+    margin: 5px 0; /* Distanza tra i link */
+    font-size: 16px; /* Imposta la dimensione del font */
+}
+
+#location-buttons a:hover {
+    color: #285f6c; /* Colore di sfondo al passaggio del mouse */
+    cursor: pointer; /* Mostra il cursore come mano */
+}
+
+#location-buttons button {
+    background-color: #f9fafb;
+    color: #3b8794;
+    padding: 5px;
+    width: 100%;
+    font-size: 14px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+}
+#left-menu.collapsed #toggle-menu {
+    transform: rotate(180deg);
+}
+.toggle-menu {
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+#location-buttons button:hover {
+   color: #285f6b;
+}
+
+/* Finto bottone per le indicazioni stradali (link) */
+#google-directions {
+    display: inline-block;
+    background-color: #3b8794;  /* Grigio */
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none; /* Rimuove la sottolineatura */
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+#google-directions:hover {
+    background-color: #285f6b;
+}
+#indicazione a {
+    display: block;
+    background-color: #d1d1d1;
+    color: #333;
+    padding: 6px 0;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+#indicazione a:hover {
+    background-color: #bbb;
+}

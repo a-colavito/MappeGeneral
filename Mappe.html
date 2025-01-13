@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mappa con MarkerCluster</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="Librerie/leaflet/leaflet.css" />
+    <!-- MarkerCluster CSS -->
+    <link rel="stylesheet" href="Librerie/markercluster/MarkerCluster.css" />
+    <link rel="stylesheet" href="Librerie/markercluster/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="Style/MappeCSS.css">
+
+    <!-- Leaflet JS -->
+
+
+</head>
+<body>
+<div id="map-container">
+
+    <!-- Left Menu -->
+    <div id="left-menu">
+        <div id="left-menu-header">
+            <h4>Politecnico di Bari</h4>
+            <!-- Triangolo per scorrere il menu -->
+            <div id="toggle-menu" class="toggle-menu">&#9660;</div>
+        </div>
+
+        <!-- Bottoni per selezionare le sedi -->
+        <div id="location-buttons">
+            <a href="#" id="bari-campus" >Sede di Bari Campus</a>
+            <a href="#" id="amministrazione">Servizi Amministrativi</a>
+            <a href="#" id="taranto" >Sede di Taranto</a>
+        </div>
+
+        <!-- Lista delle risorse -->
+        <ul id="resource-list">
+            <!-- Popolato dinamicamente -->
+        </ul>
+    </div>
+
+    <!-- Map -->
+    <div id="map"></div>
+
+    <!-- Infobox -->
+    <div id="map-menu" class="map-menu hidden">
+        <div class="menu-header">
+            <span id="menu-title"></span>
+            <button id="close-menu" class="close-button">&times;</button>
+        </div>
+        <div class="menu-content">
+            <div id="sede-selector">
+            </div>
+            <h4>Sede</h4>
+            <p id="sede"></p>
+            <h4>Piano</h4>
+            <p id="piano"></p>
+            <h4>Struttura</h4>
+            <p id="struttura"></p>
+            <h4 id="capacita-title">Capacità</h4>
+            <p id="capacita"></p>
+            <h4 id="orari-title">Orari</h4>
+            <p id="orari"></p>
+            <div>
+                <h4>Indicazioni stradali</h4>
+                <p id="indicazione">
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=Politecnico+di+Bari" id="google-directions">Ottieni indicazioni</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Leaflet JS -->
+<script src="Librerie/leaflet/leaflet.js"></script>
+<!-- MarkerCluster JS -->
+<script src="Librerie/markercluster/leaflet.markercluster.js"></script>
+<!-- Script principale -->
+<script type="module" src="Script/main.js"></script>
+</body>
+</html>
