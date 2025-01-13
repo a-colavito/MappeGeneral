@@ -42,7 +42,7 @@ export const setupMarkers = () => {
             }
             const googleDirectionsLink = document.getElementById('google-directions');
             googleDirectionsLink.href = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
-            map.setView([lat + 0, lng + 0.001], 18);
+            map.setView([lat + 0, lng + 0.0001], 18);
         });
         allMarkers.addLayer(marker);
     });
