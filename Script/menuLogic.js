@@ -18,26 +18,8 @@ export const setupMenuLogic = () => {
         mapMenu.classList.remove('hidden');
     };
 
-    // Event listener per il campus
-    campus.addEventListener('click', () => {
-        map.setView([41.1088530, 16.8789227], 18);
-        hideMapMenu();
-    });
-
-    // Event listener per Taranto
-    taranto.addEventListener('click', () => {
-        map.setView([40.526069, 17.281923], 18);
-        hideMapMenu();
-    });
-
-    // Event listener per Amministrazione
-    amministrazione.addEventListener('click', () => {
-        map.setView([41.111413, 16.883224], 18);
-        hideMapMenu();
-    });
-
-    // Toggle del menu laterale
-    toggleButton.addEventListener('click', () => {
+    // Funzione per fare toggle del menu laterale
+    const toggleLeftMenu = () => {
         leftMenu.classList.toggle('collapsed');
         const locationButtons = document.getElementById('location-buttons');
         const resourceList = document.getElementById('resource-list');
@@ -49,6 +31,32 @@ export const setupMenuLogic = () => {
             locationButtons.style.display = 'block';
             resourceList.style.display = 'block';
         }
+    };
+
+    // Event listener per il campus
+    campus.addEventListener('click', () => {
+        map.setView([41.1088530, 16.8789227], 18);
+        hideMapMenu();
+        toggleLeftMenu(); // Toggle del menu laterale
+    });
+
+    // Event listener per Taranto
+    taranto.addEventListener('click', () => {
+        map.setView([40.526069, 17.281923], 18);
+        hideMapMenu();
+        toggleLeftMenu(); // Toggle del menu laterale
+    });
+
+    // Event listener per Amministrazione
+    amministrazione.addEventListener('click', () => {
+        map.setView([41.111413, 16.883224], 18);
+        hideMapMenu();
+        toggleLeftMenu(); // Toggle del menu laterale
+    });
+
+    // Toggle del menu laterale con il pulsante
+    toggleButton.addEventListener('click', () => {
+        toggleLeftMenu();
     });
 
     // Riattiva il mapMenu se necessario, ad esempio con un evento sulla mappa
