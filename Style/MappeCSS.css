@@ -231,11 +231,12 @@ body {
     #map-menu {
         max-height:30vh;
         width: 20vh;
+        overflow-x: hidden;
     }
 
     #left-menu {
         width: 20vh;
-        font-size: 16px;
+        overflow-x: hidden;
     }
 
 }
@@ -249,11 +250,13 @@ body {
     #map-menu {
         max-height:30vh;
         width: 20vh;
+        overflow-x: hidden;
     }
 
     #left-menu {
         width: 20vh;
-        font-size: 16px;
+
+        overflow-x: hidden;
     }
 
 }
