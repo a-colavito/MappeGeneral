@@ -236,13 +236,13 @@
     }
 
     #map-menu {
-        max-height:30vh;
-        width: 20vh;
+        max-height:50vh;
+        width: 25vh;
         overflow-x: hidden;
     }
 
     #left-menu {
-        width: 20vh;
+        width: 15vh;
         overflow-x: hidden;
     }
 
@@ -255,13 +255,13 @@
     }
 
     #map-menu {
-        max-height:30vh;
-        width: 20vh;
+        max-height: 50vh;
+        width: 25vh;
         overflow-x: hidden;
     }
 
     #left-menu {
-        width: 20vh;
+        width: 15vh;
 
         overflow-x: hidden;
     }
