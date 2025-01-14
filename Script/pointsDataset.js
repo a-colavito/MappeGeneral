@@ -9,7 +9,7 @@ export const points = [
         [ 41.109429, 16.878465, "Aula Magna Domus Sapientiae", "auditorium", "Aula Magna", "Campus “Ernesto Quagliariello”,\n Via E. Orabona, 4 - 70125 Bari", "Piano Terra", "Dipartimento di Architettura, Costruzione e Design" ],
         [ 41.1079490020772, 16.879550680607615, "Student Center", "library", "Biblioteche", "Campus “Ernesto Quagliariello”,\n Via E. Orabona, 4 - 70125 Bari", "Primo e Secondo Piano", "Plesso Grandi Aule", " 148 posti al primo piano \n 96 posti al secondo piano " ],
         [ 41.107867, 16.879157, "Presidio Primo Soccorso", "hospital", "Primo Soccorso", "Campus “Ernesto Quagliariello”,\n Via E. Orabona, 4 - 70125 Bari", "Piano Terra", "Ingresso Pedonale Via Orabona", "", "Lunedì-Venerdì: 8.00-20.00 \n Sabato: 8.00-13.00" ],
-        [ 41.109126, 16.879670, "Consueling Psicologico", "consueling", "Consueling Psicologico", "Campus “Ernesto Quagliariello”,\n Via E. Orabona, 4 - 70125 Bari", "Piano Terra", "Plesso “Luigi Salvatore”", "", "Lunedì-Venerdì: 9.30-12.30" ],
+        [ 41.109126, 16.879670, "Counseling Psicologico", "consueling", "Consueling Psicologico", "Campus “Ernesto Quagliariello”,\n Via E. Orabona, 4 - 70125 Bari", "Piano Terra", "Plesso “Luigi Salvatore”", "", "Lunedì-Venerdì: 9.30-12.30" ],
         [ 41.1080290, 16.8805320, "ATM Bari Campus", "atm", "ATM Intesa San Paolo Bari Campus", "Campus “Ernesto Quagliariello”,\n Via E. Orabona, 4 - 70125 Bari", "Piano Terra", " Gabbiotto Ingresso Principale Via E. Orabona 4" ]
     ],
     ...[
